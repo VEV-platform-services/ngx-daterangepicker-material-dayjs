@@ -48,7 +48,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
       applyLabel: 'Okay',
       firstDay: 3
     }),
-    RouterModule.forRoot(AppRoutes, { relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(AppRoutes, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,6 @@
             "jasmine",
             "node"
         ],
-        "target": "es2020",
         "module": "es2020",
         "experimentalDecorators": true
     },
