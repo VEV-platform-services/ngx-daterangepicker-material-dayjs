@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as _dayjs from 'dayjs';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { LocaleConfig } from '../../../../src/daterangepicker';
 
 @Component({
@@ -9,14 +9,14 @@ import { LocaleConfig } from '../../../../src/daterangepicker';
   styleUrls: ['./reactive-form.component.scss']
 })
 export class ReactiveFormComponent {
-  form: FormGroup;
-  form2: FormGroup;
+  form: UntypedFormGroup;
+  form2: UntypedFormGroup;
   locale: LocaleConfig = {
     format: 'YYYY-MM-DDTHH:mm:ss.SSSSZ',
     displayFormat: 'YYYY-MM-DD',
   };
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: UntypedFormBuilder) {
     this.form = this.fb.group({
       selected: [{
         startDate: _dayjs().subtract(3,'week'),
@@ -39,7 +39,7 @@ export class ReactiveFormComponent {
   submit2() {
     console.log(this.form2.value);
   }
-  toggleDisable(form: FormGroup) {
+  toggleDisable(form: UntypedFormGroup) {
     if (form.disabled) {
       form.enable();
     } else {

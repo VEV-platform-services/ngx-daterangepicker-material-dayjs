@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, Input, OnInit, Output, ViewChild, ViewEncapsulation } from '@angular/core';
-import { FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { UntypedFormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 import * as _dayjs from 'dayjs';
 const dayjs = _dayjs;
 
@@ -37,7 +37,7 @@ export class DaterangepickerComponent implements OnInit {
     calendarVariables: {left: any, right: any} = {left: {}, right: {}};
     tooltiptext = [];  // for storing tooltiptext
     timepickerVariables: {left: any, right: any} = {left: {}, right: {}};
-    daterangepicker: {start: FormControl, end: FormControl} = {start: new FormControl(), end: new FormControl()};
+    daterangepicker: {start: UntypedFormControl, end: UntypedFormControl} = {start: new UntypedFormControl(), end: new UntypedFormControl()};
     applyBtn: {disabled: boolean} = {disabled: false};
     @Input()
     startDate = dayjs().startOf('day');
