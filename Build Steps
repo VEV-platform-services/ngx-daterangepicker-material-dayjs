@@ -2,6 +2,7 @@ npm run build
 cd dist
 npm publish
 npx ng build --base-href "/ngx-daterangepicker-material-dayjs/"
+cd ..
 npx ngh --dir demo/dist
 
 
