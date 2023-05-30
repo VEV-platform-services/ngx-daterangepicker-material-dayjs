@@ -30,7 +30,9 @@
         "strictMetadataEmit": true,
         "annotationsAs": "decorators",
         "strictInjectionParameters": true,
-        "strictTemplates": true
+        "strictTemplates": true,
+        "enableIvy": true,
+        "compilationMode": "partial"
     },
     "include": [
         "src/**/*"
