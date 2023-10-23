@@ -48,7 +48,6 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "16.0.3", ngImpor
                     args: [LOCALE_CONFIG]
                 }] }]; } });
 
-const dayjs = dayjs;
 dayjs.extend(localeData);
 dayjs.extend(localizedFormat);
 dayjs.extend(isoWeek);
