@@ -84,7 +84,7 @@
         },
         "dest": "dist"
     },
-    "dependencies": {
+    "allowNonPeerDependencies": {
         "@angular-devkit/core": "16"
     }
 }
